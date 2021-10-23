@@ -6,5 +6,6 @@ export default () => (
   <Page>
     <h1>This is the contact page</h1>
     <Event></Event>
+    <a href="#">Hello</a>
   </Page>
 );

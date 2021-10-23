@@ -10,5 +10,7 @@ export default () => {
     }
   }, []);
 
-  return <div></div>;
+  return (
+    <button>Hello aasdas</button>
+  )
 };
