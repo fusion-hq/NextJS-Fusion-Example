@@ -1,11 +1,5 @@
 import React from "react";
 import Document, { Head, Main, NextScript } from "next/document";
-import dynamic from 'next/dynamic'
-
-const FusionWithNoSSR = dynamic(
-  () => import('../components/Fusion'),
-  { ssr: false }
-)
 
 export default class extends Document {
   
