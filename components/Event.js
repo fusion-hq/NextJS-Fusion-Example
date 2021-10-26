@@ -1,16 +1,14 @@
 import * as React from "react";
+import fusion from "fusion-analytics-js";
 
 export default () => {
   React.useEffect(() => {
-    if (window.sa_event) {
-      console.log("sa_event is defined");
-      window.sa_event("test");
-    } else {
-      console.error("sa_event is not defined");
-    }
+    fusion.init(
+      "<YOUR_FUSION_TOKEN>",
+      "https://fusion-event-collector.herokuapp.com",
+      true
+    );
   }, []);
 
-  return (
-    <button>Hello aasdas</button>
-  )
+  return <button>Hello there</button>;
 };
